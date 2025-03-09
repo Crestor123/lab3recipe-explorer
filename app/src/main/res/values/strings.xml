@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RecipeExplorer</string>
+    <string name="spaghetti_bolognese_name">Spaghetti Bolognese</string>
+    <string name="spaghetti_bolognese_desc">
+        A classic Italian dish with rich meat sauce.
+    </string>
+</resources>
