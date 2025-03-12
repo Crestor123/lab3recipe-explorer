@@ -12,7 +12,7 @@ class RecipeViewModel : ViewModel() {
     val uiState: StateFlow<RecipeUIState> = _uiState.asStateFlow()
 
     var recipes: MutableList<Recipe> = mutableListOf()
-    private lateinit var currentRecipe: Recipe
+    lateinit var currentRecipe: Recipe
 
     init {
         initialize()
@@ -25,5 +25,9 @@ class RecipeViewModel : ViewModel() {
             recipes.add(item)
         }
         _uiState.value = RecipeUIState(recipeList = recipes)
+    }
+
+    fun setRecipe(recipe: Recipe) {
+        currentRecipe = recipe
     }
 }

@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
 
 @Preview
 @Composable
-fun mainPreview() {
+fun RecipeExplorerPreview() {
     RecipeExplorerTheme {
         Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
             RecipeExplorerApp(
