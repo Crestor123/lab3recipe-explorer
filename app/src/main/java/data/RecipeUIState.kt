@@ -1,7 +1,6 @@
 package data
 
 data class RecipeUIState(
-    val currentRecipe: String = "",
-    val currentDescription: String = "",
+    val currentRecipe: Recipe = Recipe(0, 0),
     val recipeList: MutableList<Recipe> = mutableListOf()
 )

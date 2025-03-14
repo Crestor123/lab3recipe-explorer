@@ -24,10 +24,18 @@ class RecipeViewModel : ViewModel() {
         data.recipes.forEach { item ->
             recipes.add(item)
         }
-        _uiState.value = RecipeUIState(recipeList = recipes)
+        setRecipe(recipes[0])   //set default recipe
+        _uiState.value = RecipeUIState(
+            recipeList = recipes,
+            currentRecipe = currentRecipe
+        )
     }
 
     fun setRecipe(recipe: Recipe) {
         currentRecipe = recipe
+        _uiState.value = RecipeUIState(
+            recipeList = recipes,
+            currentRecipe = currentRecipe
+        )
     }
 }
