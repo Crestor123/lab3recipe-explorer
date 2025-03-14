@@ -110,7 +110,7 @@ fun RecipeExplorerApp(
 
                 composable(route = RecipeScreen.RecipeDetail.name) {
                     RecipeDetailScreen(
-                        recipeViewModel.currentRecipe,
+                        stringResource(recipeViewModel.currentRecipe.description),
                         onBackPressed = {
                             navController.navigate(RecipeScreen.RecipeList.name)
                         }
@@ -142,7 +142,7 @@ fun ListAndDetail(
             modifier = Modifier.weight(2f)
         ) { innerPadding ->
             RecipeListScreen(
-                recipeViewModel.recipes,
+                uiState.recipeList,
                 onRecipeCardClick = onRecipeCardClick,
                 modifier = Modifier
                     .padding(innerPadding)
@@ -152,13 +152,13 @@ fun ListAndDetail(
         Scaffold (
             topBar = {
                 RecipeExplorerAppBar(
-                    title = stringResource(recipeViewModel.currentRecipe.name)
+                    title = stringResource(uiState.currentRecipe.name)
                 )
             },
             modifier = Modifier.weight(3f)
         ) { innerPadding ->
             RecipeDetailScreen(
-                uiState.currentRecipe,
+                stringResource(uiState.currentRecipe.description),
                 onBackPressed = onBackPressed,
                 modifier = Modifier
                     .padding(innerPadding)
