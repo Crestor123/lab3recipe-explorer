@@ -5,8 +5,8 @@ Running the app should be as simple as cloning and building in Android Studio.
 
 ## Screenshots
 
-![Compact List Screen](/screenshots/CompactList?raw=true "Compact List Screen")
+![Compact List Screen](screenshots/CompactList.PNG?raw=true "Compact List Screen")
 
-![Compact Detail Screen](/screenshots/CompactDetail?raw=true "Compact Detail Screen")
+![Compact Detail Screen](screenshots/CompactDetail.PNG?raw=true "Compact Detail Screen")
 
-![Tablet View](/screenshots/TabletView?raw=true "Tablet View")
+![Tablet View](screenshots/TabletView.PNG?raw=true "Tablet View")
